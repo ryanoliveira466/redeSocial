@@ -35,7 +35,6 @@ Desenvolver uma mini rede social onde usuários podem criar perfis, postar atual
 
 7. **Consumo de API**
    - Integrar com uma API pública para adicionar uma funcionalidade extra, como exibir a previsão do tempo na página principal.
-   - 
    [Emoji API](https://emojiapi.dev/)
 
 
