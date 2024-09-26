@@ -1,0 +1,5 @@
+#ff8a65 - orange	
+#f8f9fa - white
+
+onpointerover="trocarContrasteBotao()" 
+onpointerleave="voltarNormal()"
