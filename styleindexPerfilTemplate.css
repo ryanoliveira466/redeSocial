@@ -5,7 +5,7 @@ html {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(253, 253, 253));
+    background-image: linear-gradient(rgb(172, 159, 211), rgb(172, 159, 211));
     overflow-x: hidden;
     
 
@@ -19,7 +19,7 @@ html {
     place-items: center;
     /* Center both horizontally and vertically */
     height: 100vh;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(253, 253, 253));
+    background-image: linear-gradient(rgb(250, 247, 255), rgb(172, 159, 211));
 
 
 
@@ -53,9 +53,12 @@ html {
     flex-wrap: wrap;
     text-align: center;
     background-image: linear-gradient(rgb(49, 27, 146),rgb(69, 39, 160));
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    box-shadow: 
+    rgba(0, 0, 0, 0.35) 0px 16px 50px 2px, /* Bottom shadow */
+    rgba(0, 0, 0, 0.35) 0px 20px 50px 2px; /* Top shadow */
   justify-content: center;
   align-items: center;
+  max-width: 95vw;
   
 
  
@@ -421,10 +424,10 @@ h3 {
 
   #navTop{
 
-    background-image: url(gif/sky-purple.gif);  
-    background-size:auto;
-    /* skypurple; background-size: contain,auto */
-    /* star-galaxy */
+    background-image: linear-gradient(rgb(49, 27, 146),rgb(69, 39, 160));
+    overflow-wrap: break-word;
+  word-break: break-word;
+    max-width: 100vw;
 
   }
 
@@ -434,7 +437,8 @@ h3 {
 
 
   #dados{
-    border-radius: 3%;
+    border: 0px solid;
+    border-radius: 20px;
   }
 
   /* #navBottom:hover{
@@ -665,14 +669,27 @@ h3 {
 
 
 
-
 #mainEmojiSection{
     
   display: flex;
   justify-content: center;
-   
+  margin-bottom: 50px;
   flex-wrap: wrap;
-  width: 30%;
+  width: 400px;
+  height: 70px;
+  overflow-x: hidden;
+  overflow-y: auto;
+   
+}
+
+
+.mainEmojiSection{
+    
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  width: 400px;
   height: 70px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -684,7 +701,7 @@ h3 {
   justify-content: center;
    
   flex-wrap: wrap;
-  width: 90%;
+  width: 400px;
   height: 70px;
    
 }
@@ -738,34 +755,181 @@ h3 {
 
 #txConteudo{
   margin-top: -20px;
+   
+   
+   
+}
+
+ 
+
+#nomeEmail {
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  word-break: break-word; /* Enables breaking words */
+  overflow-wrap: break-word; /* Ensures long words break */
+  color: white; /* Text color */
+  
+  
+  
+}
+
+#nomeEmail p{
+ margin: 0%;
+ padding: 0%;
+  
+  
+}
+.naoSei{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+   
+}
+
+ 
+
+
+
+ 
+
+@media (max-width: 544px) {
+
+ 
+ 
+
+  
+
+  #conteudo{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+  
+  }
+ 
+  
+  
+ 
+  
+  
+  .border,.tabComentarios,.divCom,.mainDivCom{
+   max-width: 95vw;
+    
+  }
+
+  
+ 
+  #mainEmojiSection,.emojiSection{
+   width: 80vw;
+  }
+ 
+ 
+ 
+  .textAreaComent{
+   max-width: 80vw;
+    
+  }
+ 
+  .dataDaMensagem,.border1{
+   max-width: 90vw;
+  }
+ 
+  #conteudo{
+   transition: transform 0.2s ease-in-out;
+ }
+ 
+ 
+ #conteudo:hover{
+   transform: scale(1.01);
+ }
+ 
+ .dataDaMensagem{
+   transition: transform 0.1s ease-in-out;
+    
+   
+ }
+ 
+ .dataDaMensagem:hover{
+   transform: scale(1.009)
+ } 
+ 
+ .divCom{
+   display: flex;
+   justify-content: left;
+ }
+ 
+ .toast{
+   width: 20vw;
+ }
+ 
+ .divCom:hover{
+   transform: scale(1)
+ }
+
+ 
+
+ #dados{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+ }
+
+ #txConteudo{
+  max-width: 80vw;
+  
+ }
+
+ #nomeEmail p{
+  font-size: smaller;
+   
+ }
+
+  
+  
+  
+  
+ 
+  
+ 
+ }
+
+
+h1{
+  font-family: Robotobold;
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url('font/roboto/Roboto-Regular.ttf');
 }
 
 
+.border{
+  display: flex;
+  flex-wrap: wrap;
+}
 
-@media (max-width: 544px) {
-     
+.form-floating{
+  margin: 0;
+}
 
-  body,html{
-    display: grid;
-    place-items: center;
-    overflow-x: unset;
-       
-  }
-
-  .navbar{
-    display: flex;
-    width: 100%;
-  }
-
- 
-
-  #conteudo:hover{
-    transform: scale(1.01);
-  }
-  .border{
-    margin: 1rem;
-  }
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  
+  100% { opacity: 0; }
+}
 
  
-   
+
+#whiteLoadingPage {
+  position: fixed; /* Make it cover the entire viewport */
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255); /* Semi-transparent */
+  animation: fadeOut 1s;
+  z-index: 9999;
+    /* Ensure it covers other content */
 }

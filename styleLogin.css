@@ -5,7 +5,7 @@ html {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(253, 253, 253));
+    background-image: linear-gradient(rgb(172, 159, 211), rgb(172, 159, 211));
     overflow-x: hidden;
     
 
@@ -19,7 +19,7 @@ html {
     place-items: center;
     /* Center both horizontally and vertically */
     height: 100vh;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(253, 253, 253));
+    background-image: linear-gradient(rgb(250, 247, 255), rgb(172, 159, 211));
 
 
 
@@ -53,7 +53,9 @@ html {
     flex-wrap: wrap;
     text-align: center;
     background-image: linear-gradient(rgb(49, 27, 146),rgb(69, 39, 160));
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    box-shadow: 
+    rgba(0, 0, 0, 0.35) 0px 16px 50px 2px, /* Bottom shadow */
+    rgba(0, 0, 0, 0.35) 0px 20px 50px 2px; /* Top shadow */
 
 
 
@@ -162,15 +164,12 @@ h3 {
 
   #navTop{
 
-    background-image: url(gif/sky-purple.gif);  
-    background-size:auto;
-    /* skypurple; background-size: contain,auto */
-    /* star-galaxy */
-
+    background-image: linear-gradient(rgb(49, 27, 146),rgb(69, 39, 160));
   }
 
   #dados{
-    border-radius: 3%;
+    border: 0px solid;
+    border-radius: 20px;
   }
 
 
@@ -237,6 +236,61 @@ h3 {
 
 
 
+  h1{
+    font-family: Robotobold;
+  }
 
 
+  .modal h1:hover{
+    transform: scale(1);
+  }
 
+
+  #login {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    word-break: break-word; /* Enables breaking words */
+    overflow-wrap: break-word; /* Ensures long words break */
+    color: white; /* Text color */
+    
+    
+    
+  }
+  
+  #login p{
+   margin: 0%;
+   padding: 0%;
+    
+    
+  }
+  .naoSei{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+     
+  }
+  
+  
+   
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    
+    100% { opacity: 0; }
+  }
+
+   
+
+  #whiteLoadingPage {
+    position: fixed; /* Make it cover the entire viewport */
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /* Semi-transparent */
+    animation: fadeOut 1s;
+    z-index: 9999;
+      /* Ensure it covers other content */
+}
+
+  

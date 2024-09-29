@@ -2,6 +2,28 @@ let arrayUsuarios = JSON.parse(sessionStorage.getItem('arrayUsuarios')) || [];
 let arrayPaginas = JSON.parse(sessionStorage.getItem('arrayPaginas')) || [];
 let globalUser = JSON.parse(sessionStorage.getItem('globalUser')) || String;
 
+
+
+
+
+
+
+setTimeout(() => {
+    document.getElementById("whiteLoadingPage").style.display = "none";
+  }, 500); // Hide after 4 seconds to match the animation duration
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(arrayUsuarios)
 console.log(arrayPaginas)
 

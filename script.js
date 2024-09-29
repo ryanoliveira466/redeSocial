@@ -1,6 +1,28 @@
 //////AO MEXER COM PONINTEROVER E POINTERLEAVE
 ///// USAR pointer-events: none; E cursor: pointer;
   
+ 
+
+ 
+setTimeout(() => {
+    document.getElementById("whiteLoadingPage").style.display = "none";
+  }, 500); // Hide after 4 seconds to match the animation duration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('btRegistrar');
@@ -554,6 +576,7 @@ function trigger() {
     <link rel="stylesheet" href="styleindexPerfilTemplate.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/icons8-logotipo-do-stellarium-240.png" type="image/x-icon">
 
     <title>Perfil de ${nome}</title>
 </head>
@@ -562,20 +585,21 @@ function trigger() {
 
 <body>
 
+ <div id="whiteLoadingPage" style=""> 
+        <img src="gif/764.png" alt="" srcset="">
+    </div>
+
      <nav class="navbar" id="navTop"
         style="box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  ">
-        <div class="container-fluid">
+        <div class="naoSei">
             <a class="navbar-brand" style="color: white;" href="#">
                 <img src="img/icons8-logotipo-do-stellarium-240.png" alt="Logo" id="logo" width="160px" height="160px"
                     class="d-inline-block align-text-center">
-                 <div style=" position: absolute; left: 170px; bottom: 80px;"><p>Nome: ${nome}</p> 
-                     
-                </div>
-                <div style=" position: absolute; left: 170px; bottom: 42px;"><p>Email: ${email}</p> 
-                     
-                </div>
-      
+
             </a>
+
+             <div id='nomeEmail'><p>Nome: ${nome}</p> 
+                <p>Email: ${email}</p> </div>
         </div>
     </nav>
 
@@ -606,10 +630,10 @@ function trigger() {
 
     <div class="boxDados" id="boxDados">
 
-       <h1 style="color: blue; margin: 2rem;">Logar</h1>
+       <h1 style="color: blue; margin: 2rem;">LOGAR</h1>
         <button type="button" class="btn btn-light" onclick="window.location.href='indexLogin.html';" id="actionButtons"><img src="img/icons8-entrar-50.png" alt="HTML tutorial"
                 style="width:42px;height:42px; margin: 2rem;"></button>
-        <h1 style="color: blue;margin: 2rem;">TimeLine</h1>
+        <h1 style="color: blue;margin: 2rem;">TIMELINE</h1>
         <button type="button" class="btn btn-light" onclick="window.location.href='indexTimeLine.html';" id="actionButtons"><img src="img/icons8-linha-do-tempo-50.png" alt="HTML tutorial"
                 style="width:42px;height:42px; margin: 2rem;"></button>
 
@@ -620,7 +644,7 @@ function trigger() {
  
         <div class="dados" id="dados">
 
-            <h3 style="padding-top: 12px;font-size: medium;" > Escreva Algo: </h3>
+            <h3 style="padding-top: 12px;font-size: medium;" ></h3>
             <div class="form-floating" style="margin:2rem;">
             <div id="txConteudo" class="textAreaComent" contenteditable="true" name="txConteudo" style="height: 100px;"></div>
              </div>
