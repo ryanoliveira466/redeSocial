@@ -15,10 +15,14 @@ html {
     /* display: flex;
     justify-content: center; */
     color: rgba(255, 255, 255, 0.738);
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
     place-items: center;
     /* Center both horizontally and vertically */
-    height: 100vh;
+   
     background-image: linear-gradient(rgb(250, 247, 255), rgb(172, 159, 211));
 
 
@@ -47,6 +51,14 @@ html {
 
 }
 
+
+
+ 
+
+
+
+
+
 .dados {
     display: flex;
     flex-direction: column;
@@ -59,6 +71,8 @@ html {
   justify-content: center;
   align-items: center;
   max-width: 95vw;
+  
+  
   
 
  
@@ -81,7 +95,8 @@ h3 {
 }
 
 .navbar {
-    font-family: Roboto
+    font-family: Roboto;
+    
 }
 
 .alert {
@@ -673,7 +688,7 @@ h3 {
     
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-top: 40px;
   flex-wrap: wrap;
   width: 400px;
   height: 70px;
