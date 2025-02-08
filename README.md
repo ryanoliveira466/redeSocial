@@ -1,4 +1,3 @@
-# redeSocialRyan
 # Mini Rede Social
 
  
