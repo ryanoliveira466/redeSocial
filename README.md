@@ -48,3 +48,7 @@ Desenvolver uma mini rede social onde usuários podem criar perfis, postar atual
 - Qualidade e clareza do código.
 - Criatividade na implementação.
 
+---
+
+[ryanoliveira466.github.io/redeSocial](https://ryanoliveira466.github.io/redeSocial/)
+
