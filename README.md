@@ -21,23 +21,28 @@ Desenvolver uma mini rede social onde usuários podem criar perfis, postar atual
 
 **Página de Perfil**
 
-    Cada usuário deve ter uma página de perfil onde suas informações básicas e atualizações de status são exibidas.
+    Cada usuário deve ter uma página de perfil
+    onde suas informações básicas e atualizações de status são exibidas.
 
 **Postagem de Atualizações**
 
-    Implementar a funcionalidade para que os usuários possam postar atualizações de status (texto simples).
+    Implementar a funcionalidade para que os usuários
+    possam postar atualizações de status (texto simples).
 
 **Interações com Postagens**
 
-    Permitir que os usuários curtam e comentem em postagens de outros usuários.
+    Permitir que os usuários curtam
+    e comentem em postagens de outros usuários.
 
 **Timeline**
 
-    Criar uma página principal que exiba todas as postagens dos usuários, ordenadas por data.
+    Criar uma página principal que exiba
+    todas as postagens dos usuários, ordenadas por data.
 
 **Design Responsivo**
 
-    Utilizar Bootstrap para garantir que a interface seja responsiva e funcione bem em diferentes dispositivos.
+    Utilizar Bootstrap para garantir que a interface seja responsiva
+    e funcione bem em diferentes dispositivos.
 
 **Consumo de API**
 
