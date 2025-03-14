@@ -11,7 +11,7 @@ Desenvolver uma mini rede social onde usuários podem criar perfis, postar atual
 
 ### **Requisitos**
 
-0.  **Diagrama Lógico**
+0. **Diagrama Lógico**
    - Modelar as entidades que representam as funcionalidades do sistema.
 
 1. **Cadastro de Usuários**
