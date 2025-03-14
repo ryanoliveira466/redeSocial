@@ -11,30 +11,38 @@ Desenvolver uma mini rede social onde usuários podem criar perfis, postar atual
 
 ### **Requisitos**
 
-0. **Diagrama Lógico**
-   - Modelar as entidades que representam as funcionalidades do sistema.
+**Diagrama Lógico**
 
-1. **Cadastro de Usuários**
-   - Criar um formulário para cadastro de novos usuários, coletando informações como nome, email e senha.
+     Modelar as entidades que representam as funcionalidades do sistema.
 
-2. **Página de Perfil**
-   - Cada usuário deve ter uma página de perfil onde suas informações básicas e atualizações de status são exibidas.
+**Cadastro de Usuários**
 
-3. **Postagem de Atualizações**
-   - Implementar a funcionalidade para que os usuários possam postar atualizações de status (texto simples).
+    Criar um formulário para cadastro de novos usuários, coletando informações como nome, email e senha.
 
-4. **Interações com Postagens**
-   - Permitir que os usuários curtam e comentem em postagens de outros usuários.
+**Página de Perfil**
 
-5. **Timeline**
-   - Criar uma página principal que exiba todas as postagens dos usuários, ordenadas por data.
+    Cada usuário deve ter uma página de perfil onde suas informações básicas e atualizações de status são exibidas.
 
-6. **Design Responsivo**
-   - Utilizar Bootstrap para garantir que a interface seja responsiva e funcione bem em diferentes dispositivos.
+**Postagem de Atualizações**
 
-7. **Consumo de API**
-   - Integrar com uma API pública para adicionar uma funcionalidade extra, como exibir a previsão do tempo na página principal.
-     
+    Implementar a funcionalidade para que os usuários possam postar atualizações de status (texto simples).
+
+**Interações com Postagens**
+
+    Permitir que os usuários curtam e comentem em postagens de outros usuários.
+
+**Timeline**
+
+    Criar uma página principal que exiba todas as postagens dos usuários, ordenadas por data.
+
+**Design Responsivo**
+
+    Utilizar Bootstrap para garantir que a interface seja responsiva e funcione bem em diferentes dispositivos.
+
+**Consumo de API**
+
+    Integrar com uma API pública para adicionar uma funcionalidade extra, 
+    como exibir a previsão do tempo na página principal.
    - [Emoji API](https://emojiapi.dev/)
 
 
@@ -50,4 +58,3 @@ Desenvolver uma mini rede social onde usuários podem criar perfis, postar atual
 ---
 
 [ryanoliveira466.github.io/redeSocial](https://ryanoliveira466.github.io/redeSocial/)
-
