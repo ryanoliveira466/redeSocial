@@ -13,11 +13,13 @@ Desenvolver uma mini rede social onde usuários podem criar perfis, postar atual
 
 **Diagrama Lógico**
 
-     Modelar as entidades que representam as funcionalidades do sistema.
+     Modelar as entidades
+     que representam as funcionalidades do sistema.
 
 **Cadastro de Usuários**
 
-    Criar um formulário para cadastro de novos usuários, coletando informações como nome, email e senha.
+    Criar um formulário para cadastro de novos usuários,
+    coletando informações como nome, email e senha.
 
 **Página de Perfil**
 
